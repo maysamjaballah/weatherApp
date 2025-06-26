@@ -1,0 +1,100 @@
+/* Importation des icônes Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+/* Variables de thème */
+:root {
+  --primary-color: #ff69b4;
+  --secondary-color: #d62d7a;
+  --bg-color: #ffe6f0;
+  --text-color: #4a154b;
+  --shadow-color: rgba(255, 105, 180, 0.4);
+  --font-main: 'Poppins', sans-serif;
+  --font-title: 'Pacifico', cursive;
+}
+
+/* Style global */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background: linear-gradient(to bottom right, var(--bg-color), #ffccf2);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Boîtes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* En-têtes */
+h1, h2, h3 {
+  font-family: var(--font-title);
+  color: var(--primary-color);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Liens */
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Boutons */
+button {
+  font-family: inherit;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 8px var(--shadow-color);
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+  background-color: #c92468;
+}
+
+/* Icônes */
+i {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+i:hover {
+  transform: rotate(15deg) scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
